@@ -19,7 +19,7 @@
         h1 {
             color: white;
             text-align: center;
-            margin-bottom: 8px;
+            margin: 0;
             text-shadow: 0 2px 10px black;
             font-weight: 600;
             letter-spacing: -0.02em;
@@ -27,10 +27,17 @@
         h2 {
             color: white;
             text-align: center;
-            margin-top: 0;
+            margin: 10px 0 0;
             font-size: 1rem;
             font-weight: normal;
             font-family: 'IBM Plex Mono', monospace;
+        }
+        header {
+            max-width: 850px;
+            margin: 0 auto 32px;
+            padding: 28px 24px;
+            background: rgba(45, 45, 45, 0.94);
+
         }
         p {
             color: white;
@@ -75,32 +82,91 @@
             border: 0;
             cursor: pointer;
         }
+        .input-table {
+            margin-top: 28px;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.45);
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .input-table td {
+            
+            padding: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+        }
+        .input-table input {
+            width: 120px;
+            margin: 0;
+            
+        }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>IBM's next best website</h1>
-    <h2>By Jaiden Lakhman</h2>
+    <header>
+        <h1>IBM's next best website</h1>
+        <h2>By Jaiden Lakhman</h2>
+    </header>
+    <p> Welcome to my website! I believe that it is going to be the best website created but not for the reasons you might think.</p>
     <p>Why is this going to be the best website</p>
     <ol>
         <li>Easy to use.</li>
         <li>Simple to read.</li>
-        <li>Pretty to look at.</li>
+        <li>Lots of features to try out.</li>
     </ol>
     
-    <a href="https://www.ibm.com/uk-en">Visit the real IBM website by clicking this link</a>
+    <a href="https://www.ibm.com/uk-en">Visit the real IBM website (Which is probably a little bit better) by clicking this link</a>
     <br>
     <br>
     <a href="https://www.ibm.com/uk-en">
         <img src="/Images/ibm-logo_brandlogos.net_ahkkf.png" alt="Image of IBM logo" width="200" height="100">
     </a>
     <br>
-    <h3> This is a submit button and form which does nothing yet</h3>
-    <input type="form" placeholder="Username" />
-    <input type="form" placeholder="Password" />
+    <h3> This is a submit button and form which does nothing yet.</h3>
+    <form>
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
     <input type="submit" value="Submit" />
-    
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <table class="input-table">
+        <thead>
+            <tr>
+                <th> Noughts and Crosses for fun</th>
+            </tr>
+        </thead>
+        <tr>
+            <td><input type="text" placeholder="Text" /></td>
+            <td><input type="text" placeholder="Text" /></td>
+            <td><input type="text" placeholder="Text" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Text" /></td>
+            <td><input type="text" placeholder="Text" /></td>
+            <td><input type="text" placeholder="Text" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Text" /></td>
+            <td><input type="text" placeholder="Text" /></td>
+            <td><input type="text" placeholder="Text" /></td>
+        </tr>
+    </table>
 </body>
 </html>
